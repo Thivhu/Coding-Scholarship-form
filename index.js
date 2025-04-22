@@ -1,4 +1,4 @@
-alert("Welcome to the Scholarship Application Form!");
+
 
 let currentStep =1;
 let formData ={ 
