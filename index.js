@@ -78,7 +78,7 @@ function renderStep() {
 function nextStep() {
   if (!validateStep()) {
     alert("Please fill in all required fields before proceeding.");
-    return; 
+    return; // Prevent moving forward if fields are incomplete
   }
 
   saveData();
