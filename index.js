@@ -150,3 +150,7 @@ function submitForm() {
 }
 
 window.onload = renderStep;
+function enterSite() {
+  document.getElementById("cover-page").style.display = "none";
+  document.getElementById("main-content").style.display = "block";
+}
