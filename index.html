@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Scholarship Application Form</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Scholarship Application Form</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
+
+ 
 <div id="cover-page">
-    <h1 class="front-cover">Welcome To Future-Tech </h1>
-    <button onclick="enterSite()">Proceed</button>
+<h1 class="front-cover">Welcome To Future-Tech</h1>
+<button onclick="enterSite()" class="proceed-button">Proceed</button>
 </div>
 
+<div id="about-page" style="display:none;">
+  <h1>About Future-Tech</h1>
+  <p style="max-width: 700px; margin: auto; font-size: 18px; line-height: 1.6;">
+    Future-Tech is a dynamic initiative aimed at empowering the next generation of tech innovators.
+Our mission is to close the digital skills gap by creating access to world-class opportunities in technology, especially for youth from underrepresented communities.
 
+Through our scholarship program, we identify passionate and driven learners, and equip them with the tools, resources, and support they need to excel in the tech world. This includes:
+
+Full access to top-tier coding and tech education (JavaScript, Python, AI, UI/UX design, and more),
+
+Mentorship from industry professionals and experienced developers,
+
+Real-world project experience to build strong portfolios,
+
+Career guidance to help our students navigate job markets, internships, and freelance opportunities.
+
+At Future-Tech, we believe innovation thrives on diversity. We are committed to nurturing inclusive talent and building a generation of ethical, skilled, and creative technology leaders who will shape the future.
+  </p>
+  <button onclick="goToForm()" class="application-button">Continue to Application</button>
 </div>
 
-<body> 
-     <h1>Scholarship Application Form</h1>
-    <div id="form-container"></div>
-      
-        <button  class= "button" id="nextBtn" onclick="nextStep()">Next</button> 
-    </div> 
-      
-</div>
+<div id="main-content" style="display:none;">
+<h1>Scholarship Application Form</h1>
+<div id="form-container"></div>
+   
 
   
 
+<div id="thank-you" style="display:none; text-align:center;">
+<h2 class="thank-you">🎉 Thank You for Your Submission!</h2>
+<p>We'll get back to you shortly.</p>
+</div>
+<footer>
+This weather app was coded by <a href="https://github.com/Thivhu"> Thivhulawi Nethengwe</a> and is open sourced on
+        <a href="https://github.com/Thivhu/Coding-Scholarship-form">GitHub</a> and is hosted on 
+        <a href="https://weather-app-by-thivhu.netlify.app/">Netlify</a>.
+</footer>
 
-    <script src="index.js">
-  
-
-    </script>
+<script src="index.js"></script>
 </body>
 </html>
